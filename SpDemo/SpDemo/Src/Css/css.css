@@ -1,0 +1,151 @@
+﻿
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../Images/stock-photo-1411472891.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+#box{
+    font-size:36px;
+    color:#4f6fef;
+    background:#4f6fef;
+    opacity:0.3;
+}
+
+.txt-style{
+    font-size:30px;
+
+}
+.bg-style{
+    background-color:#4800ff;
+}
+.login-wrapper {
+    margin: 0 auto;
+    overflow:hidden;
+}
+.login-content{
+    width: 340px;
+    height: 360px;
+    padding: 10px 20px;
+    margin:140px auto;
+    background-color: rgba(255,255,255,0.5);
+}
+table{
+    width:100%;
+    font-size:12px;
+}
+tr{
+    height:50px;
+}
+table>tr>th{
+    width:100%;
+    height:40px;
+    margin-bottom:20px;
+}
+     
+.txt{
+    width:240px;
+    height:32px;
+    padding:0 5px;
+    border:1px solid #ddd;
+    color:#666;
+    font-size:14px;
+}
+#labLogin{
+    color:#333;
+    font-size:18px;
+    font-family:"微软雅黑";
+    text-align:center;
+}
+#btnLogin{
+    width:252px;
+    height:36px;
+    background-color:#0094ff;
+    border:0;
+    color:#fff;
+    font-size:14px;
+    font-family:"微软雅黑";
+}
+#labTip{
+    color:#bd3535;
+    font-size:12px;
+}
+
+/*首页*/
+.header-wrapper{
+    /*height:60px;*/
+    /*background-color:#fff;*/
+}
+.navbar{
+    border-radius:0;
+}
+.main-contain{
+    width:100%;
+    height:400px;
+    
+}
+.main,.sidebar{
+    background-color:#fff;
+    box-shadow:1px 1px 1px rgba(0,0,0,0.1);
+}
+.sidebar{
+    height:200px;
+    padding:20px;
+}
+.userInfo-wrapper{
+    
+}
+.user-img {
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 30px;
+    background-color: #0094ff;
+    background-image: url('../Images/user.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.lab-info{
+    color:#4f6fef;
+    font-size:14px;
+}
+.btn-exit{
+    float:right;
+}
+.sitemap-wrapper{
+    height:360px;
+    color:#333;
+}
+.chat-wrapper{
+    width:800px;
+    height:500px;
+    margin:0 auto;
+    background-color:rgba(255,255,255,0.8);
+}
+.chat-header{
+    width:100%; 
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+.chat-header h3{
+    height:60px;
+    line-height:60px;
+    padding:0;
+    margin:0;
+    background-color:rgba(255,255,255,1);
+}
+.person-wrapper{
+    border-right:1px solid #ddd;
+    overflow-y:scroll;
+}
+.chat-foot {
+    width: 100%;
+    height: 80px;
+
+    margin:0 auto;
+    border-top:1px solid #ddd;
+}

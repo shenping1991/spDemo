@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "demo04_Layout1.cshtml";
+    Page.Title = "Home";
+}
+
+@{
+    var imgPath = "";
+    var imgName = "";
+    if (Request["choice"] != null)
+    {
+        imgPath = "Src/images/" + Request["choice"];
+        imgName = Request["choice"].ToString().Substring(0,Request["choice"].Length-4);
+    }
+
+    var _path = Server.MapPath("~/App_Data/people.txt");
+    Array txtCon = File.ReadAllLines(_path);
+
+
+    var txt = "";
+    if (DateTime.Now.Hour > 12)
+    {
+        txt = "Good Evening";
+    }
+    else
+    {
+        txt = "Good Morning";
+    }
+    
+}
+<div style="width:1000px; height:1200px; background:#f4f4f4;">
+    选择图片，提交显示图片：
+    <form action="" method="post">
+        <select name="choice">
+            <option value="img1.jpg">img1</option>
+            <option value="img2.jpg">img2</option>
+            <option value="img3.jpg">img3</option>
+        </select>
+        <input type="submit" value="选择" />
+        @if (imgPath != "")
+        {
+            <div class="img_wrapper">
+                <img style=" width:100px; height:100px;" src="@imgPath" alt="@imgName" />
+                <p></p>
+            </div>
+        }
+   
+    </form>
+    <div class="read_txt_wrapper" style="width:1000px;height:100px; color:#333;">
+        从文本文件中读取内容：<br />
+        (显示 Excel 文件中的数据使用 Microsoft Excel，您可以将一个电子表格保存为一个逗号分隔的文本文件（.csv 文件）。
+        此时，电子表格中的每一行保存为一个文本行，每个数据列由逗号分隔。)<br />
+
+        @foreach (string str in txtCon)
+        {
+            foreach (string ch in str.Split(','))
+            {
+                <span>@ch</span><text>&nbsp;</text>
+            }
+        }
+    </div>
+
+    <div>
+        Razor 是一种标记语法，可以让您将基于服务器的代码嵌入到网页中。
+        <ul>
+            @for (int i = 0; i < 5; i++)
+            {
+                <li>@i</li>
+            }
+            
+        </ul>
+        <p>现在时间段：@txt</p>
+      
+    </div>
+</div>
+
+

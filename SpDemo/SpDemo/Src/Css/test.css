@@ -1,0 +1,20 @@
+﻿body {
+    margin:0 auto;
+    padding:0 ;
+    width:1000px;
+}
+#box2{
+    width:300px;
+    height:260px;
+    margin-top:40px;
+    padding:20px;
+    border:1px solid #ccc;
+}
+.style-red{
+    color:red;
+    font-size:10px;
+}
+.style-gre{
+    color:green;
+    font-size:20px;
+}

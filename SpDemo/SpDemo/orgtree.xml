@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root  >
+  <Item url="Default.aspx" name="首页" >
+    <!--<Option url="siteMap.aspx" name="站点链接"></Option>-->
+  </Item>
+  <Item url="siteMap.aspx" name="站点链接" >
+    <!--<Option url="siteMap.aspx" name="站点链接"></Option>-->
+  </Item>
+</Root>

@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>@Page.Title</title>
+        @RenderSection("head", required: false)
+        <style >
+
+        </style>
+    </head>
+    <body>
+        @RenderPage("demo04_header.cshtml")
+        <div>
+            @RenderBody()
+        </div>
+    </body>
+</html>
